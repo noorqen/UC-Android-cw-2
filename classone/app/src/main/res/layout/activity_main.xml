@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDF3CF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/editTextviewtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="63dp"
+        android:text="Calculator"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextTextFirstNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextviewtitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:hint="first number"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextSecondNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextFirstNumber"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="second number"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextSecondNumber"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="54dp"
+        android:backgroundTint="#E6759C"
+        android:text="ADD +" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addbutton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="45dp"
+        android:text="Result"
+        android:textColor="#000000"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="109dp"
+        android:layout_height="134dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="32dp"
+        app:srcCompat="@drawable/greencalculator" />
+
+    <Button
+        android:id="@+id/subbutton"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTextSecondNumber"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="54dp"
+        android:layout_toEndOf="@+id/addbutton"
+        android:backgroundTint="#8B5CDF"
+        android:text="SUBTRACT -" />
+
+</RelativeLayout>
